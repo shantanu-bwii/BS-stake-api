@@ -7,7 +7,7 @@ const port = 5000;
 const app = express();
 
 const corsOptions ={
-    origin:'https://bs-staking.netlify.app', 
+    origin:'https://techdiggdevelopment.com/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
