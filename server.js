@@ -7,7 +7,7 @@ const port = 5000;
 const app = express();
 
 const corsOptions ={
-    origin:'https://techdiggdevelopment.com/', 
+    origin:'https://techdiggdevelopment.com', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
