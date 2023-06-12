@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
  
 const TokenSchema = new mongoose.Schema({
     Name: String,
-    Value: Number
+    Value: Decimal128
 });
  
 module.exports = mongoose.model(
