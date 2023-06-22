@@ -7,7 +7,7 @@ const port = 5000;
 const app = express();
 
 const corsOptions ={
-    origin: ['https://techdiggdevelopment.com', 'http://localhost:3000', 'bsstaking.io'], 
+    origin: ['https://techdiggdevelopment.com', 'http://localhost:3000', 'https://bsstaking.io'], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
