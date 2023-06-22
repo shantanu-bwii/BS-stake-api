@@ -3,10 +3,12 @@ const express = require('express');
 const router = express.Router();
 const StakingModel = require('./stakingSchema.js');
 const TokenModel = require('./tokenSchema.js');
+const dotenv = require('dotenv');
+
+dotenv.config({ path: './.env' });
 
 // Connecting to database
-const password = 'udit@123#'
-const query = `mongodb+srv://uditchandan1988:${encodeURIComponent(password)}@cluster0.3re3ekx.mongodb.net/?retryWrites=true&w=majority`
+const query = `mongodb+srv://blackstallionproducts:${encodeURIComponent(process.env.MONGO_DB_PASSWORD)}@cluster0.dv7xhvf.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose.connect(query, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
